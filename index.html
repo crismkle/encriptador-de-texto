@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <img src="Imagenes/Logo.png" alt="Imagen del logo Alura"/>
-    <textarea>Ingrese el texto aquí</textarea>    
-    <img src="Imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación"/>
-    <label>Sólo letras minúsculas y sin acentos</label>
-    <button>Encriptar</button>
-    <button>Desencriptar</button>
-    <img src="Imagenes/Muñeco.png" alt="Imagen de muñeco"/>
-    <label>Ningún mensaje fue encontrado</label>
-    <textarea>Ingresa el texto que desees encriptar o desencriptar.</textarea>
+    <header>
+
+        <img src="Imagenes/Logo.png" alt="Imagen del logo Alura"/>
+
+    </header>
+
+    <main>
+
+        <textarea placeholder="Ingrese el texto aquí"></textarea>    
+
+        <img src="Imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación"/>
+        <label>Sólo letras minúsculas y sin acentos</label>
+
+        <button class="boton" onclick="desaparecerEncriptado()">Encriptar</button>
+        <button class="boton" >Desencriptar</button>
+
+        <div id="area-encriptado-desencriptado">
+            <img src="Imagenes/Muñeco.png" alt="Imagen de muñeco"/>
+            <label>Ningún mensaje fue encontrado</label>
+            <textarea placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <button class="boton" >Copiar</button>
+        </div>
+
+        <footer>
+            Sitio desarrollado por Cristian Muñoz
+        </footer>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>
