@@ -13,31 +13,50 @@
 <body>
     <header>
 
-        <img src="Imagenes/Logo.png" alt="Imagen del logo Alura"/>
+        <h1><img src="Imagenes/Logo.png" alt="Imagen del logo Alura"/></h1>
 
     </header>
 
     <main>
 
-        <textarea placeholder="Ingrese el texto aquí"></textarea>    
+        <section class="area-input">
 
-        <img src="Imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación"/>
-        <label>Sólo letras minúsculas y sin acentos</label>
+            <textarea placeholder="Ingrese el texto aquí" class="textarea-input" id="textareaIn"></textarea>    
 
-        <button class="boton" onclick="desaparecerEncriptado()">Encriptar</button>
-        <button class="boton" >Desencriptar</button>
+            
+            <label class="mensaje-requisitos"><img src="Imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación"/> Sólo letras minúsculas y sin acentos</label>
 
-        <div id="area-encriptado-desencriptado">
-            <img src="Imagenes/Muñeco.png" alt="Imagen de muñeco"/>
-            <label>Ningún mensaje fue encontrado</label>
-            <textarea placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
-            <button class="boton" >Copiar</button>
-        </div>
+            <div  class="botones">
+                <button class="boton" onclick="desaparecerEncriptado()">Encriptar</button>
+                <button class="boton" onclick="desenciptar()" >Desencriptar</button>
+            </div>
 
-        <footer>
-            Sitio desarrollado por Cristian Muñoz
-        </footer>
+        </section>
+
+        <section id="area-encriptado-desencriptado">
+            <div id="area-encriptado-elementos">
+                <img src="Imagenes/Muñeco.png" alt="Imagen de muñeco"/>
+
+                <div>
+
+                    <label class="texto-estado">Ningún mensaje fue encontrado</label>
+                    <label class="texto-indicacion">Ingresa el texto que desees encriptar o desencriptar.</label>
+
+                </div>
+
+            </div>
+
+            <textarea id="textarea-encriptado"></textarea>
+            <button class="boton" id="boton-copiar" onclick="copiarTexto()">Copiar</button>
+
+        </section>
+
     </main>
+
+    <footer class="piepagina">
+        © 2024 - Cristian Muñoz. Todos los derechos reservados.
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
