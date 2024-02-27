@@ -7,6 +7,9 @@
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
 
 </head>
 
@@ -22,32 +25,33 @@
         <section class="area-input">
 
             <textarea placeholder="Ingrese el texto aquí" class="textarea-input" id="textareaIn"></textarea>    
-
+            <div>
+                <h6 class="mensaje-requisitos"><img src="Imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación"/> Sólo letras minúsculas y sin acentos</h6>
+            </div>
             
-            <label class="mensaje-requisitos"><img src="Imagenes/bi_exclamation-circle-fill.png" alt="Imagen de signo de exclamación"/> Sólo letras minúsculas y sin acentos</label>
-
             <div  class="botones">
-                <button class="boton" onclick="desaparecerEncriptado()">Encriptar</button>
+                <button class="boton" id="boton-Encriptar" onclick="desaparecerEncriptado()">Encriptar</button>
                 <button class="boton" onclick="desenciptar()" >Desencriptar</button>
             </div>
 
         </section>
 
-        <section id="area-encriptado-desencriptado">
+        <section class="area-resultado">
+            <!--
             <div id="area-encriptado-elementos">
-                <img src="Imagenes/Muñeco.png" alt="Imagen de muñeco"/>
-
                 <div>
+                    <img src="/Imagenes/Muñeco.png" alt="Imagen de muñeco">
 
                     <label class="texto-estado">Ningún mensaje fue encontrado</label>
                     <label class="texto-indicacion">Ingresa el texto que desees encriptar o desencriptar.</label>
 
                 </div>
 
-            </div>
+            </div>-->
 
-            <textarea id="textarea-encriptado"></textarea>
-            <button class="boton" id="boton-copiar" onclick="copiarTexto()">Copiar</button>
+                <textarea disabled id="textarea-encriptado"></textarea>
+                <button class="boton" id="boton-copiar" onclick="copiarTexto()">Copiar</button>
+
 
         </section>
 
