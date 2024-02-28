@@ -8,11 +8,18 @@ const matriz = [
   
   function desaparecerEncriptado() {
   
-      document.getElementById("textarea-encriptado").style.backgroundImage = "none";
-      document.getElementById("textarea-encriptado").disabled = false;
-      document.getElementById("boton-copiar").style.display = "block";
-  
-      document.getElementById("textarea-encriptado").value = encriptar();
+        if(document.getElementById("textareaIn").value != ""){
+
+            document.getElementById("area-encriptado-elementos").style.display = "none";
+            document.getElementById("textarea-encriptado").style.display = "flex";
+            document.getElementById("textarea-encriptado").disabled = false;
+            document.getElementById("boton-copiar").style.display = "block";
+        
+            document.getElementById("textarea-encriptado").value = encriptar();
+
+        }else{
+            alert("Debe ingresar un mensaje.");
+        }
     }
   
     
