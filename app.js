@@ -13,7 +13,7 @@ const matriz = [
             document.getElementById("area-encriptado-elementos").style.display = "none";
             document.getElementById("textarea-encriptado").style.display = "flex";
             document.getElementById("textarea-encriptado").disabled = false;
-            document.getElementById("boton-copiar").style.display = "block";
+            document.getElementById("boton-copiar").style.display = "flex";
         
             document.getElementById("textarea-encriptado").value = encriptar();
 
