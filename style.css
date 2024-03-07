@@ -1,11 +1,18 @@
 *{
-    background: #F3F5FC;
+    /* background: #F3F5FC; */
     font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 48px;
     letter-spacing: 0em;
-    text-align: left;    
+    text-align: left;
+}
+
+body{
+    background-image: url("Imagenes/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -18,14 +25,18 @@ main{
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
 }
 
 .area-input{
     width: 50%;
-    height: 80vh;
+    height: 72vh;
     margin: 30px;
-    text-align:center;
-    background: #F3F5FC;
+    border-radius: 32px;
+    text-align: center;
+    background: rgba(156, 170, 221, 0.7);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -37,10 +48,11 @@ main{
 
 .textarea-input{
     width: 80%;
-    height: 100%; /*70vh;*/
+    height: 100%;
+    border-radius: 32px;
     margin: 20px 0;
     padding: 12px 20px;
-    background: #F3F5FC;
+    background: rgba(243, 245, 252, 0.9);
     border: none;
     resize: none;
     text-transform: lowercase;
@@ -62,14 +74,10 @@ h6 img{
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
-    text-align: left;    
+    text-align: left;
     color: #495057;
     height: 25px;
     margin: 5px;
-
-    /* position: absolute;
-    left: 110px;       */
-
 }
 
 .botones{
@@ -78,7 +86,7 @@ h6 img{
     margin: 0 10px 25px 10px;
     padding: 0 10px;
     width: 100%;
-    
+
     /* position: absolute;
     bottom: 40px; */
 }
@@ -104,11 +112,11 @@ h6 img{
 
 .area-resultado{
     width: 35%;
-    height: 80vh;
+    height: 72vh;
     margin: 30px 30px;
-    background: #ffffff;
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background: rgba(156, 170, 221, 0.7);
     text-align:center;
     display: flex;
     flex-direction: column;
@@ -119,16 +127,16 @@ h6 img{
 .area-encriptado-elementos img{
     margin: 20px 0;
     width: 60%;
-    background: #ffffff;
+    /* background: #ffffff; */
 }
 
 .area-encriptado-elementos{
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
     height: 100%;
-    background: #ffffff;
+    /* background: #ffffff; */
     border-radius: 32px;
     padding: 10px;
 }
@@ -141,8 +149,10 @@ h6 img{
     width: 75%;
     margin: 5px;
     color:#343A40;
-    background: #ffffff;
-    padding: 5px;    
+    /* background: #ffffff; */
+    background: rgba(243, 245, 252, 0.9);
+    border-radius: 32px;
+    padding: 5px;
 }
 
 .texto-indicacion{
@@ -152,7 +162,9 @@ h6 img{
     width: 80%;
     margin: 5px;
     color:#495057;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: rgba(243, 245, 252, 0.9);
+    border-radius: 32px;
     padding: 5px;
 }
 
@@ -163,8 +175,9 @@ h6 img{
     height: 100%; /*70%; */
     display: none;
     padding: 12px 20px;
-    margin: 20px 20px;    
-    background: #ffffff;
+    margin: 20px 20px;
+    /* background: #ffffff; */
+    background: rgba(243, 245, 252, 0.9);
     border: none;
     border-radius: 24px;
     color: #0A3871;
@@ -177,33 +190,66 @@ h6 img{
 }
 
 
-.boton-copiar{
+.botones-copiar{
     display: none;
+    width: 80%;
     justify-content: center;
-    width: 350px;
-    background: #ffffff;
+    /* background: #ffffff; */
     margin: 25px 0;
-        
-    /* position: absolute;
-    bottom: 40px;     */
 }
 
 
 .pie-pagina{
-    font-family: Inter;
+    /* font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;    
-
-    padding: 5px;
-    background-color: #ffffff;
-    position: fixed;
+    letter-spacing: 0em; */
+    padding: 5px 0;
+    /* background-color: #4e4e4e; */
+    background: rgba(81, 87, 107, 0.7);
+    position: absolute;
     bottom: 0;
     width: 100%;
-    box-shadow: -1px -11px 32px -10px rgba(0,0,0,0.75);
+    /* box-shadow: -1px -11px 32px -10px rgba(0,0,0,0.75); */
+    align-items: center;
 }
+
+.footer-name{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: normal;
+    color: #f1f1f1;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    padding: 5px 10px;
+    /* background-color: #ffffff; */
+
+}
+
+.footer-media{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 10px;
+    /* background-color: #ff.
+    ffff; */
+}
+
+.footer-media i{
+    padding: 0 5px;
+    font-size: 1.4em;
+    cursor: pointer;
+    
+}
+
+.icons-default{
+    color: rgb(255, 255, 255);
+}
+
 
 @media screen and (max-width:768px){
 
@@ -211,16 +257,12 @@ h6 img{
         display: block;
         width: auto;
     }
-    
+
     .textarea-input{
         min-height: 320px;
         height: auto;
         width: 85%;
     }
-
-    /* .botones, .mensaje-requisitos{
-        position: static;
-    } */
 
     .area-input, .area-resultado, .texto-estado, .texto-indicacion, .area-encriptado-elementos{
         width: auto;
@@ -238,20 +280,48 @@ h6 img{
         height: auto;
     }
 
+    .pie-pagina{
+        display: block;
+        justify-content: center;
+        height: 60px;
+        position: relative;
+    }
+
+    .footer-name{
+        display: block;
+        text-align: center;
+    }
+
+    .footer-media{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:480px){
+
+    .area-input{
+        height: auto;
+    }
+
+    .textarea-input{
+        height: auto;
+        width: 75%;
+    }
 
     .botones, .mensaje-requisitos{
         display: block;
         width: auto;
     }
-    
+
     .boton{
-        margin: 8px 0;
+        display: block;
+        margin: 10px auto;
     }
-    
-    .boton-copiar{
+
+    .botones-copiar{
         width: auto;
     }
 
