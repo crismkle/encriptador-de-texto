@@ -60,7 +60,6 @@ const matriz = [
   
         let textoEncrip = document.getElementById("textareaIn").value;
   
-        // for (let i=0; i<matriz.length; i++){
         for (let i=matriz.length-1; i>=0; i--){            
             if (textoEncrip.includes(matriz[i][1])){
                 textoEncrip = textoEncrip.replaceAll(matriz[i][1], matriz[i][0]);
@@ -76,7 +75,7 @@ const matriz = [
       let textoCopiado = document.getElementById("textarea-encriptado");
   
       textoCopiado.select();
-      textoCopiado.setSelectionRange(0,99999); //For mobile devices
+      textoCopiado.setSelectionRange(0,99999);
   
       navigator.clipboard.writeText(textoCopiado.value);
     }

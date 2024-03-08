@@ -1,5 +1,4 @@
 *{
-    /* background: #F3F5FC; */
     font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -27,7 +26,7 @@ main{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    
+
 }
 
 .area-input{
@@ -50,7 +49,7 @@ main{
     width: 80%;
     height: 100%;
     border-radius: 32px;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
     padding: 12px 20px;
     background: rgba(243, 245, 252, 0.9);
     border: none;
@@ -78,6 +77,13 @@ h6 img{
     color: #495057;
     height: 25px;
     margin: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    background: rgba(243, 245, 252, 0.9);
+    padding: 0 5px;
 }
 
 .botones{
@@ -86,9 +92,6 @@ h6 img{
     margin: 0 10px 25px 10px;
     padding: 0 10px;
     width: 100%;
-
-    /* position: absolute;
-    bottom: 40px; */
 }
 
 .boton{
@@ -121,13 +124,11 @@ h6 img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: relative; */
 }
 
 .area-encriptado-elementos img{
     margin: 20px 0;
     width: 60%;
-    /* background: #ffffff; */
 }
 
 .area-encriptado-elementos{
@@ -136,7 +137,6 @@ h6 img{
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* background: #ffffff; */
     border-radius: 32px;
     padding: 10px;
 }
@@ -149,7 +149,6 @@ h6 img{
     width: 75%;
     margin: 5px;
     color:#343A40;
-    /* background: #ffffff; */
     background: rgba(243, 245, 252, 0.9);
     border-radius: 32px;
     padding: 5px;
@@ -162,7 +161,6 @@ h6 img{
     width: 80%;
     margin: 5px;
     color:#495057;
-    /* background: #ffffff; */
     background: rgba(243, 245, 252, 0.9);
     border-radius: 32px;
     padding: 5px;
@@ -172,11 +170,10 @@ h6 img{
     font-size: 24px;
     line-height: 36px;
     width: 75%;
-    height: 100%; /*70%; */
+    height: 100%;
     display: none;
     padding: 12px 20px;
     margin: 20px 20px;
-    /* background: #ffffff; */
     background: rgba(243, 245, 252, 0.9);
     border: none;
     border-radius: 24px;
@@ -194,24 +191,17 @@ h6 img{
     display: none;
     width: 80%;
     justify-content: center;
-    /* background: #ffffff; */
     margin: 25px 0;
 }
 
 
 .pie-pagina{
-    /* font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em; */
     padding: 5px 0;
-    /* background-color: #4e4e4e; */
-    background: rgba(81, 87, 107, 0.7);
+    text-transform: uppercase;
+    background: rgba(81, 87, 107, 0.8);
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* box-shadow: -1px -11px 32px -10px rgba(0,0,0,0.75); */
     align-items: center;
 }
 
@@ -225,7 +215,6 @@ h6 img{
     position: relative;
     left: 0;
     padding: 5px 10px;
-    /* background-color: #ffffff; */
 
 }
 
@@ -235,15 +224,13 @@ h6 img{
     right: 0;
     bottom: 0;
     padding: 5px 10px;
-    /* background-color: #ff.
-    ffff; */
 }
 
 .footer-media i{
     padding: 0 5px;
     font-size: 1.4em;
     cursor: pointer;
-    
+
 }
 
 .icons-default{
@@ -253,7 +240,7 @@ h6 img{
 
 @media screen and (max-width:768px){
 
-    main, .textarea-input, .mensaje-requisitos{
+    main, .textarea-input{
         display: block;
         width: auto;
     }
@@ -269,7 +256,9 @@ h6 img{
     }
 
     #textarea-encriptado{
+        width: 85%;
         height: 50vh;
+        margin: 20px 0;
     }
 
     .area-encriptado-elementos img{
@@ -283,7 +272,7 @@ h6 img{
     .pie-pagina{
         display: block;
         justify-content: center;
-        height: 60px;
+        height: auto;
         position: relative;
     }
 
@@ -297,7 +286,7 @@ h6 img{
         position: relative;
         text-align: center;
     }
-    
+
 }
 
 @media screen and (max-width:480px){
@@ -311,18 +300,19 @@ h6 img{
         width: 75%;
     }
 
-    .botones, .mensaje-requisitos{
+    .botones, .botones-copiar{
         display: block;
-        width: auto;
+        width: 80%;
     }
 
     .boton{
         display: block;
+        width: 100%;
         margin: 10px auto;
     }
 
-    .botones-copiar{
-        width: auto;
+    #textarea-encriptado{
+        width: 75%;
     }
 
 }
