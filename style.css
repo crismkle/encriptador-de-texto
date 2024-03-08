@@ -262,10 +262,6 @@ h6 img{
         margin: 20px 0;
     }
 
-    .area-encriptado-elementos img{
-        display: none;
-    }
-
     .area-resultado, .area-encriptado-elementos{
         height: auto;
     }
